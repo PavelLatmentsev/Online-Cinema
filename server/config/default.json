@@ -1,4 +1,6 @@
 {
-    "port": 8080
+    "port": 3111,
+    "mongoUri": "mongodb://mongoAdmin:superAdmin2023@188.68.222.70:27017/online-cinema"
+    
   }
   
