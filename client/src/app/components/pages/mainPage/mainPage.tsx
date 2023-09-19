@@ -1,8 +1,11 @@
+
 const MainPage = () => {
   return (
-    <>
-      <h1>Main Page</h1>
-    </>
+    <main>
+      <div className="container">
+
+      </div>
+    </main>
   );
 };
 

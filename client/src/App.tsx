@@ -26,7 +26,7 @@ function App() {
         <Route path="collections" element={<CollectionsPage />} />
         <Route path="events" element={<EventPosterPage />} />
         <Route path="feedback" element={<FeedbackPage />} />
-        <Route path="films" element={<FilmPage />} />
+        <Route path="movies" element={<FilmPage />} />
         <Route path="media" element={<MediaPage />} />
         <Route path="news" element={<NewsPage />} />
         <Route path="*" element={<NotfoundPage />} />
