@@ -1,10 +1,7 @@
-
 const MainPage = () => {
   return (
     <main>
-      <div className="container">
-
-      </div>
+<p>fdsadasd</p>
     </main>
   );
 };
