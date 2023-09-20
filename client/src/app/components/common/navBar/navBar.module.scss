@@ -1,0 +1,14 @@
+.navigate {
+    color: #fff;
+    font-family: Qanelas, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    &__order {
+      display: flex;
+    }
+    &__order li:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
