@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 
-const Header = () => {
+const Header = ():JSX.Element => {
   return (
     <header>
       <div className={styles.container}>
           <div className={styles.header}>
             <div className={styles.header__logo}>
               <div>
-                <img src="../../../../../public/img/logo/Logo.png" alt="logo" />
+               <Link to="\"><img src="../../../../../public/img/logo/Logo.png" alt="logo" /></Link> 
               </div>
               <div>
                 <img
-                  src="../../../../../public/img/logo/icons-social.svg"
+                  src="../../../../../public/img/icons/icons-social.svg"
                   alt="social"
                 />
               </div>
