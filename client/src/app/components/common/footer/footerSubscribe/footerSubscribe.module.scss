@@ -1,0 +1,29 @@
+.footer {
+  &__subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(29, 58, 160, 0.9);
+    font-family: Qanelas;
+    font-style: normal;
+    color: var(--primary-text-color);
+    &__logo {
+      margin-top: 76px;
+      margin-bottom: 53px;
+    }
+    &__title {
+      font-size: 50px;
+      font-weight: 900;
+      line-height: normal;
+      margin-bottom: 26px;
+    }
+    &__description{
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 140.2%;
+        margin-bottom: 34px;
+        max-width: 704px;
+    }
+  }
+}

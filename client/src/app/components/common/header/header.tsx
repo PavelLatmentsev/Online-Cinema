@@ -10,12 +10,12 @@ const Header = (): JSX.Element => {
           <div className={styles.header__logo}>
             <div>
               <Link to="\">
-                <img src="../../../../../public/img/logo/Logo.png" alt="logo" />
+                <img src="/img/logo/Logo.png" alt="logo" />
               </Link>
             </div>
             <div>
               <img
-                src="../../../../../public/img/icons/icons-social.svg"
+                src="/img/icons/icons-social.svg"
                 alt="social"
               />
             </div>
@@ -25,7 +25,7 @@ const Header = (): JSX.Element => {
             <div className={styles.header__searchBar__wrapperSearch}>
               <input type="text" className={styles.header__searchBar__search} />
               <img
-                src="../../../../../public/img/icons/search.svg"
+                src="/img/icons/search.svg"
                 alt="search"
                 className={styles.header__searchBar__icons}
               />
