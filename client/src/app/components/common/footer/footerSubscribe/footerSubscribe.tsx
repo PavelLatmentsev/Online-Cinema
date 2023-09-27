@@ -1,5 +1,20 @@
+import { useForm, SubmitHandler, SubmitErrorHandler,FormProvider} from "react-hook-form";
+import TextField from "../../form/textField/textField";
 import styles from "./footerSubscribe.module.scss";
 const FooterSubscribe = (): JSX.Element => {
+  interface ISub  {
+    subscribe: string;
+  }
+    const methods = useForm<ISub>();
+
+  const submitForm: SubmitHandler<ISub> = (data) => {
+    console.log(data);
+    methods.reset();
+  };
+  const errorsForm: SubmitErrorHandler<ISub> = (data) => {
+    console.log(data);
+
+  };
   return (
     <div className={styles.footer__subscribe}>
       <div className={styles.footer__subscribe__logo}>
@@ -13,8 +28,17 @@ const FooterSubscribe = (): JSX.Element => {
         форму ниже и оформите бесплатную E-mail рассылку!
       </p>
       <div className={styles.footer__subscribe__email}>
-        <input type="text" placeholder="Введите свой E-mail адрес" />{" "}
-        <button>Подписаться</button>
+        <FormProvider {...methods}>
+        <form action="" onSubmit={methods.handleSubmit(submitForm, errorsForm)}>
+          <TextField
+            placeholder="Введите ваш e-mail"
+            name="subscribe"
+            type="text"
+          />
+          <button>Подписаться</button>
+        </form>
+        </FormProvider>
+        {/* <span>{errors.name}</span> */}
       </div>
       <div>
         <input type="checkbox" />{" "}
