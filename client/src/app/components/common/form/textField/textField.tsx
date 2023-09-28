@@ -3,7 +3,7 @@ import styles from "./textField.module.scss";
 import { FC } from "react";
 import { ITextFieldProps } from "./textField.Props";
 
-const TextField: FC<ITextFieldProps> = ({ name, placeholder, type }) => {
+const TextField: FC<ITextFieldProps> = ({ name, placeholder, type, errorin }) => {
   const {
     register,
     formState: { errors },
@@ -22,7 +22,7 @@ const TextField: FC<ITextFieldProps> = ({ name, placeholder, type }) => {
         className={styles.textField__item}
         placeholder={placeholder}
       />
-      {errors[name] && (
+      {errorin&& errors[name] && (
         <p className={styles.textField__error}>
           {" "}
           {`${errors[name]?.message}`}

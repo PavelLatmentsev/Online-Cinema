@@ -3,7 +3,7 @@ import styles from "./checkboxField.module.scss";
 import { FC } from "react";
 import { ICheckFieldProps } from "./checkboxField.Props";
 
-const CheckBoxField: FC<ICheckFieldProps> = ({ name }) => {
+const CheckBoxField: FC<ICheckFieldProps> = ({ name, errorin }) => {
   const {
     register,
     formState: { errors },
@@ -14,11 +14,11 @@ const CheckBoxField: FC<ICheckFieldProps> = ({ name }) => {
         {...register(`${name}`, {
           required: "Поле обязательно для заполнения!",
         })}
-        className={styles.textField__item}
+        className={styles.checkboxField__item}
         type="checkbox"
       />
-      {errors[name] && (
-        <p className={styles.textField__error}> {`${errors[name]?.message}`}</p>
+      {errorin && [name] && (
+        <p className={styles.checkboxField__error}> {`${errors[name]?.message}`}</p>
       )}
     </div>
   );

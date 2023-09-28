@@ -1,11 +1,13 @@
 .footer {
+  font-family: Qanelas;
+
   &__subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
     background: rgba(29, 58, 160, 0.9);
-    font-family: Qanelas;
+
     font-style: normal;
     color: var(--primary-first-color);
     &__logo {
@@ -18,20 +20,42 @@
       line-height: normal;
       margin-bottom: 26px;
     }
-    &__description{
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 140.2%;
-        margin-bottom: 34px;
-        max-width: 704px;
+    &__description {
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 140.2%;
+      margin-bottom: 34px;
+      max-width: 704px;
     }
     &__email {
-        margin-bottom: 22px;
-      
+      margin-bottom: 22px;
     }
     &__form {
       display: flex;
-      align-items: center
+      align-items: baseline;
+      font-size: 17px;
+    }
+    &__subtitle {
+      color: var(--primary-second-color);
+      color: #f2f60f;
+      font-style: normal;
+      font-size:inherit;
+      font-weight: 400;
+      line-height: 140.2%;
+      text-decoration-line: underline;
+    }
+    &__license {
+      color:var(--primary-first-color);
+      text-align: start;
+      font-size:inherit;
+      font-style: normal;
+      margin-left: 10px;
+    }
+    &__error {
+      text-align: start;
+      color:var(--primary-error-color);
+      font-size:17px;
+      margin: 10px 0;
     }
   }
 }
