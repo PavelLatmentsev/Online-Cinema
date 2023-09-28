@@ -6,10 +6,14 @@
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background: rgba(29, 58, 160, 0.9);
-
+    background: #1d3aa0e5 90%;
     font-style: normal;
     color: var(--primary-first-color);
+    &__wrapper {
+      background: url("/public//img//background/back-subscribe.png") lightgray
+        50% / cover no-repeat;
+      border-radius: 10px;
+    }
     &__logo {
       margin-top: 76px;
       margin-bottom: 53px;
@@ -17,7 +21,7 @@
     &__title {
       font-size: 50px;
       font-weight: 900;
-      line-height: normal;
+
       margin-bottom: 26px;
     }
     &__description {
@@ -28,33 +32,40 @@
       max-width: 704px;
     }
     &__email {
-      margin-bottom: 22px;
+      margin-bottom: 106px;
     }
     &__form {
       display: flex;
       align-items: baseline;
       font-size: 17px;
     }
+    &__form:first-child {
+      margin-bottom: 22px;
+      gap: 0 10px;
+    }
+    &__form:nth-child(2) {
+      justify-content: center;
+    }
     &__subtitle {
       color: var(--primary-second-color);
       color: #f2f60f;
       font-style: normal;
-      font-size:inherit;
+      font-size: inherit;
       font-weight: 400;
       line-height: 140.2%;
       text-decoration-line: underline;
     }
     &__license {
-      color:var(--primary-first-color);
+      color: var(--primary-first-color);
       text-align: start;
-      font-size:inherit;
+      font-size: inherit;
       font-style: normal;
       margin-left: 10px;
     }
     &__error {
       text-align: start;
-      color:var(--primary-error-color);
-      font-size:17px;
+      color: var(--primary-error-color);
+      font-size: 17px;
       margin: 10px 0;
     }
   }

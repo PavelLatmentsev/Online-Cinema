@@ -27,6 +27,7 @@ const FooterSubscribe = (): JSX.Element => {
   };
   console.log(errors);
   return (
+    <div  className={styles.footer__subscribe__wrapper}>
     <div className={styles.footer__subscribe}>
       <div className={styles.footer__subscribe__logo}>
         <img src="/img/logo/Logo.png" alt="logo" />
@@ -68,7 +69,6 @@ const FooterSubscribe = (): JSX.Element => {
                   политики конфиденциальности
                 </Link>
               </span>
-
             </div>
             {errors?.license && (
               <p className={styles.footer__subscribe__error}>
@@ -79,6 +79,7 @@ const FooterSubscribe = (): JSX.Element => {
           </form>
         </FormProvider>
       </div>
+    </div>
     </div>
   );
 };
