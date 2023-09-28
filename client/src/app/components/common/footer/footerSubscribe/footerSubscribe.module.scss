@@ -27,6 +27,11 @@
     }
     &__email {
         margin-bottom: 22px;
+      
+    }
+    &__form {
+      display: flex;
+      align-items: center
     }
   }
 }

@@ -1,21 +1,34 @@
-import {  useFormContext} from "react-hook-form";
+import { useFormContext } from "react-hook-form";
 import styles from "./textField.module.scss";
 import { FC } from "react";
-interface ISubscribe {
-  name: string,
-  placeholder:string,
-  type: string
-}
+import { ITextFieldProps } from "./textField.Props";
 
-const TextField: FC<ISubscribe> = ({name, placeholder, type, } ) => {
-  const { register, formState: { errors } } = useFormContext();
-  console.log(errors)
+const TextField: FC<ITextFieldProps> = ({ name, placeholder, type }) => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
   return (
-    <>
-       <input {...register(`${name}`, {required: "Поле обязательно для заполнения"})} type={type} className={styles.textField} placeholder={placeholder} />
-       {/* <div>{errors.}</div> */}
-    </>
-     
+    <div className={styles.textField}>
+      <input
+        {...register(`${name}`, {
+          required: "Поле обязательно для заполнения!",
+          pattern: {
+            value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,17}$/,
+            message: "Пожалуйста, введите корректный email!",
+          },
+        })}
+        type={type}
+        className={styles.textField__item}
+        placeholder={placeholder}
+      />
+      {errors[name] && (
+        <p className={styles.textField__error}>
+          {" "}
+          {`${errors[name]?.message}`}
+        </p>
+      )}
+    </div>
   );
 };
 

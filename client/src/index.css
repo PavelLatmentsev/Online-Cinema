@@ -4,6 +4,7 @@
   font-family: Qanelas, sans-serif;
   --background: #1E2538;
   --primary-first-color: #FFF;
+  --primary-error-color: #d71616;
 }
 
 body {

@@ -1,0 +1,16 @@
+.checkboxField {
+    &__item {
+      width: 425px;
+      border-radius: 10px;
+      background: var(--primary-first-color);
+      padding-top: 22px;
+      padding-bottom: 22px;
+      padding-left: 25px;
+      font-size: inherit;
+    }
+      &__error {
+      color: var(--primary-error-color);
+      margin-top: 10px;
+    }
+  }
+  
