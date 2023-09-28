@@ -3,6 +3,10 @@
     &__item {
       border-radius: 10px;
       background: var( --primary-second-color);
+      width: 17px;
+      height: 17px;
+      border-radius: 2px;
+border: 1px solid #F2F60F;
     }
       &__error {
       color: var(--primary-error-color);
