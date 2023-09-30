@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "67rdca3eeb7f6f324geed43888",
+        "genre": "Боевики"
+
+      },
+
+      {
+        "_id": "67rdca3eeb7f6f324geed43899",
+        "genre": "Приключения"
+
+      },
+      {
+        "_id": "67rdca3eeb7f6f324geed43900",
+        "genre": "Комедии"
+
+      },
+      {
+        "_id": "67rdca3eeb7f6f324geed43901",
+        "genre": "Фантастика"
+
+      },
+      {
+        "_id": "67rdca3eeb7f6f324geed43902",
+        "genre": "Триллер"
+
+      },
+      {
+        "_id": "67rdca3eeb7f6f324geed43903",
+        "genre": "Драма"
+
+      }
+      
+  ]
