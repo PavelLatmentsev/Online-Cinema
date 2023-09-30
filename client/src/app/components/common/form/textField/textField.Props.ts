@@ -1,6 +1,6 @@
-export interface ITextFieldProps {
+import { InputHTMLAttributes } from "react";
+
+export interface ITextFieldProps extends InputHTMLAttributes<HTMLElement> {
     name: string;
-    placeholder: string;
-    type: string;
     errorin :boolean
   }
