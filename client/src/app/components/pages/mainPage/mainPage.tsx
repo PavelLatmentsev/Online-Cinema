@@ -2,6 +2,7 @@ import genreService from "../../../service/genre.service";
 import { useQuery } from "@tanstack/react-query";
 import { useGenreStore } from "../../../store/genreStore";
 import styles from "./mainPage.module.scss";
+import CommonButton from "../../common/button/commonButton";
 const MainPage = () => {
   const genre=useGenreStore(state=>state.genre);
   const setDatas=useGenreStore(state=>state.setData);
@@ -40,7 +41,7 @@ const { isLoading, isSuccess, error, data } = useQuery(
             </div>
            </div>
            <div></div>
-           <button>Все новинки</button>
+       <CommonButton background="transparent">Все новинки</CommonButton>
            </div>
         </div>
       </section>
