@@ -54,13 +54,14 @@ const FooterSubscribe = (): JSX.Element => {
                 errorin={false}
               />
               <CommonButton>Подписаться</CommonButton>
+              {errors?.subscribe && (
+                  <p className={styles.footer__subscribe__error}>
+                    {" "}
+                    {`${errors?.subscribe?.message}`}
+                  </p>
+              )}
             </div>
-            {errors?.subscribe && (
-              <p className={styles.footer__subscribe__error}>
-                {" "}
-                {`${errors?.subscribe?.message}`}
-              </p>
-            )}
+
             <div className={styles.footer__subscribe__form}>
               <CheckBoxField name="license" errorin={false} />
               <span className={styles.footer__subscribe__license}>
