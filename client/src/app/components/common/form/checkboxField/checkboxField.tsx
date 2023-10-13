@@ -10,14 +10,17 @@ const CheckBoxField: FC<ICheckFieldProps> = ({ name }) => {
   } = useFormContext();
   return (
     <div className={styles.checkboxField}>
+        <label className={styles.checkboxField__title}>
       <input
         {...register(`${name}`, {
           required: "Поле обязательно для заполнения!",
         })}
         className={styles.checkboxField__item}
         type="checkbox"
+        data-type="checkbox"
+        name={name}
       />
-   
+       </label>
         <div className={styles.checkboxField__error}>
         { errors[name] && (
         <p className={styles.checkboxField__error__item}> {`${errors[name]?.message}`}</p>)   }
