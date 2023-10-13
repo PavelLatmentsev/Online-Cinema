@@ -15,17 +15,15 @@ const CheckBoxField: FC<ICheckFieldProps> = ({ name }) => {
         {...register(`${name}`, {
           required: "Поле обязательно для заполнения!",
         })}
-        className={styles.checkboxField__item}
+        className={`${styles.checkboxField__item} ${errors[name] ? styles.checkboxField__error : ""}`}
         type="checkbox"
         data-type="checkbox"
         name={name}
       />
        </label>
-        <div className={styles.checkboxField__error}>
-        { errors[name] && (
-        <p className={styles.checkboxField__error__item}> {`${errors[name]?.message}`}</p>)   }
-        </div>
-   
+
+    
+
     </div>
   );
 };

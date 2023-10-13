@@ -9,7 +9,8 @@
 border: 1px solid #F2F60F;
     }
       &__error {
-        min-height: 22px;
+       border:2px solid red;
+       background:red;
         &__item {
           color: var(--primary-error-color);
           font-size:inherit;
@@ -23,23 +24,15 @@ border: 1px solid #F2F60F;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.1;
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em;
-
 }
 
 input[data-type="checkbox"] {
   appearance: none;
-  background-color: #fff;
-  margin: 0;
+   margin: 0;
   font: inherit;
   color: black;
-  width: 17px;
-  height: 17px;
   transform: translateY(-0.075em);
   border-radius: 2px;
-  border: 1px solid #F2F60F;
   background: #F2F60F;
   display: grid;
   place-content: center;
