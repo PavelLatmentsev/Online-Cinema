@@ -9,9 +9,12 @@
 border: 1px solid #F2F60F;
     }
       &__error {
-      color: var(--primary-error-color);
-      margin-top: 10px;
-        font-size:inherit;
+        min-height: 22px;
+        &__item {
+          color: var(--primary-error-color);
+          font-size:inherit;
+        }
+
     }
   }
   

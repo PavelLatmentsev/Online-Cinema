@@ -15,9 +15,6 @@ const FooterSubscribe = (): JSX.Element => {
     license: boolean;
   }
   const methods = useForm<ISub>();
-  const {
-    formState: { errors },
-  } = methods;
   const submitForm: SubmitHandler<ISub> = (data) => {
     console.log(data);
     methods.reset();
@@ -25,7 +22,6 @@ const FooterSubscribe = (): JSX.Element => {
   const errorsForm: SubmitErrorHandler<ISub> = (data) => {
     console.log("data", data);
   };
-  console.log(errors);
   return (
     <div  className={styles.footer__subscribe__wrapper}>
     <div className={styles.footer__subscribe}>
@@ -51,19 +47,12 @@ const FooterSubscribe = (): JSX.Element => {
                 placeholder="Введите ваш e-mail"
                 name="subscribe"
                 type="text"
-                errorin={false}
               />
               <CommonButton>Подписаться</CommonButton>
-              {errors?.subscribe && (
-                  <p className={styles.footer__subscribe__error}>
-                    {" "}
-                    {`${errors?.subscribe?.message}`}
-                  </p>
-              )}
             </div>
 
             <div className={styles.footer__subscribe__form}>
-              <CheckBoxField name="license" errorin={false} />
+              <CheckBoxField name="license"/>
               <span className={styles.footer__subscribe__license}>
                 Соглашаюсь на условия{" "}
                 <Link to={"404"} className={styles.footer__subscribe__subtitle}>
@@ -71,12 +60,6 @@ const FooterSubscribe = (): JSX.Element => {
                 </Link>
               </span>
             </div>
-            {errors?.license && (
-              <p className={styles.footer__subscribe__error}>
-                {" "}
-                {`${errors?.license?.message}`}
-              </p>
-            )}
           </form>
         </FormProvider>
       </div>

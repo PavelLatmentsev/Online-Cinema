@@ -26,7 +26,10 @@
   }
 
   &__error {
-    color: var(--primary-error-color);
-    margin-top: 10px;
+    min-height: 22px;
+    &__item {
+      color: var(--primary-error-color);
+    }
+
   }
 }
