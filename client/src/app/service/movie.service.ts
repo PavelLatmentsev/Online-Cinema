@@ -1,4 +1,4 @@
-import { IFilmCard } from "../components/common/filmCard/card.props";
+import { IFilmCard } from "../components/common/filmCard/filmCard.props";
 import axios from "axios";
 const movieEndpoint = "/movies";
 
