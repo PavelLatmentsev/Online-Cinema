@@ -1,4 +1,6 @@
-const filmCardmodulescssscss = () => {
+import { IFilmCard } from "./card.props";
+
+const filmCardmodulescssscss = ({card}: IFilmCard) => {
     return ( 
         <div>Карточка фильма</div>
      );
