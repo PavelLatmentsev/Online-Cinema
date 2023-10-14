@@ -13,7 +13,6 @@ export const useGenreStore = create<IGenreState>()(devtools(immer((set) => ({
   setData: (data: IGenre[]) => set((state) => {
     //   users: [...state.users, { id: Date.now(), username }], --соблюдаем иммутабельность
  state.genre=data
-
     }),
  
 }))));
