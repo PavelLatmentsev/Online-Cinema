@@ -8,7 +8,7 @@ router.get("/", async(req,res) =>{
         res.status(200).send(movies)
     } catch (e) {
         res.status(500).json({
-            message:"На сервере произошла ошибка. Попробуйте позже"
+            message:"На сервере фильмов произошла ошибка. Попробуйте позже"
         })
     }
 })
