@@ -1,7 +1,12 @@
-.FilmCards {
-
+.filmCards {
     display: grid;
-    grid-template: repeat(2, minmax(254px, 480px)) / repeat(4, minmax(178px, 340px));
+    grid-template: repeat(2, minmax(254px, 527px)) / repeat(4, minmax(178px, 340px));
     grid-auto-rows: minmax(178px, auto);
-    row-gap: 15px;;
+    gap: 30px 22px;
 }
+
+.container {
+    min-width: 1430px;
+    margin: 0 auto;
+  }
+  

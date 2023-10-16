@@ -33,10 +33,10 @@ const MainPage = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.FilmCards}>
+            <div className={styles.filmCards}>
               {movies ? (
                 movies.map((movie) => {
-               return <div key={movie._id}> <FilmCard card={movie}/>     </div> 
+               return  <FilmCard card={movie} key={movie._id}/> 
                 })
               ) : (
                 <div>Loading...</div>

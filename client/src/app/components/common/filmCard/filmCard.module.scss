@@ -1,0 +1,36 @@
+.filmCard {
+    text-align: left;
+  &__imgWrapper {
+    position: relative;
+  }
+  &__img {
+    border-radius: 10px;
+    margin-bottom: 9px;
+  }
+
+  &__rating {
+    position: absolute;
+    top: 28px;
+    right: 12px;
+    border-radius: 5px;
+    background: #89cb36;
+    padding: 5px 13px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__name {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+  &__genre {
+    color: #f2f60f;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

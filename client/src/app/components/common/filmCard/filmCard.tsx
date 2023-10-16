@@ -2,15 +2,14 @@ import { IFilmCard } from "./filmCard.props";
 
 import styles from "./filmCard.module.scss"
 const FilmCard = ({ card }:{card: IFilmCard}) => {
-  console.log("card", card)
   return (
     <div className={styles.filmCard}>
-      <div>
-        <img src={card.url} alt={card.name} />
-        <span>{card.rating}</span>
+      <div  className={styles.filmCard__imgWrapper}>
+        <img className={styles.filmCard__img} src={card.url} alt={card.name} />
+        <div className={styles.filmCard__rating}>{card.rating}</div>
       </div>
-      <div>{card.name}</div>
-      <div>{card.genre}</div>
+      <div className={styles.filmCard__name}>{card.name}</div>
+      <div className={styles.filmCard__genre}>{card.genre}</div>
     </div>
   );
 };
