@@ -6,12 +6,9 @@ const schema = new Schema(
     genre: { type: String },
     rating: { type: String },
     url: { type: String },
-    isNew: { type: Boolean },
+    isNewCinema: { type: Boolean },
     inCinema: { type: Boolean }
-  },
-  {
-    timestamps: true,
-  }
+  },{ versionKey: false }
 );
 
 module.exports = model("Movie", schema);

@@ -5,7 +5,7 @@
         "name": "Побег из претории",
         "rating": "6,70",
         "url":"/public/img/films/pretoria.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
       },
 
@@ -15,7 +15,7 @@
         "name": "3022",
         "rating": "4,90",
         "url":"/public/img/films/3022.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
       },
       {
@@ -24,7 +24,7 @@
         "name": "Плихие парни навсегда",
         "rating": "6,90",
         "url":"/public/img/films/badboys.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
 
       },
@@ -34,7 +34,7 @@
         "name": "Джокер",
         "rating": "8,50",
         "url":"public/img/films/joker.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
 
       },
@@ -43,8 +43,8 @@
         "genre": "Биография, спорт, драма,боевик",
         "name": "Ford против Ferrari",
         "rating": "8,10",
-        "url":"client/public/img/films/pretoria.jpg",
-        "isNew": true,
+        "url":"/public/img/films/pretoria.jpg",
+        "isNewCinema": true,
         "inCinema": true
 
       },
@@ -54,7 +54,7 @@
         "name": "Звёздные войны: Скайуокер. Восход",
         "rating": "6,70",
         "url":"public/img/films/star-wars.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
 
       },
@@ -64,7 +64,7 @@
         "name": "Хищные птицы: Потрясающая история Харли Квинн",
         "rating": "6,20",
         "url":"public/img/films/harley.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
 
       },
@@ -74,9 +74,8 @@
         "name": "Джентльмены",
         "rating": "8,00",
         "url":"public/img/films/gentelmens.jpg",
-        "isNew": true,
+        "isNewCinema": true,
         "inCinema": true
-
       }
       
   ]
