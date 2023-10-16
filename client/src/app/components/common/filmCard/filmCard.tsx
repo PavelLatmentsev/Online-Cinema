@@ -1,7 +1,7 @@
 import { IFilmCard } from "./filmCard.props";
 
 import styles from "./filmCard.module.scss"
-const FilmCard = ({ card }: IFilmCard) => {
+const FilmCard = ({ card }:{card: IFilmCard}) => {
   console.log("card", card)
   return (
     <div className={styles.filmCard}>
