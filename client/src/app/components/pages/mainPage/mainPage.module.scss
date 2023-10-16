@@ -1,12 +1,47 @@
+.nowCinema {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 65px 0;
+    &__devider {
+        width: 51px;
+        height: 2px;
+        background:#fff;
+    }
+    &__header {
+      color: #fff;
+      font-size: 65px;
+      font-weight: 900;
+      line-height: normal;
+    }
+    &__order {
+      display: flex;
+      color: rgba(255, 255, 255, 0.35);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: normal;
+    }
+    &__order li:nth-child(n) {
+      margin-left: 40px;
+    }
+    &__order li:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
 .filmCards {
-    display: grid;
-    grid-template: repeat(2, minmax(254px, 527px)) / repeat(4, minmax(178px, 340px));
-    grid-auto-rows: minmax(178px, auto);
-    gap: 30px 22px;
+  display: grid;
+  grid-template: repeat(2, minmax(254px, 527px)) / repeat(
+      4,
+      minmax(178px, 340px)
+    );
+  grid-auto-rows: minmax(178px, auto);
+  gap: 30px 22px;
 }
 
 .container {
-    min-width: 1430px;
-    margin: 0 auto;
-  }
-  
+  min-width: 1430px;
+  margin: 0 auto;
+}

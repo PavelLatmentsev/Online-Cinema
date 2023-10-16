@@ -18,11 +18,11 @@ const MainPage = () => {
       <section>
         <div className={styles.container}>
           <div className={styles.nowCinema}>
-            <div>
-              <h1>Сейчас в кино</h1>
-              <div></div>
-              <div>
-                <ul>
+            <div className={styles.nowCinema__title}>
+              <h1 className={styles.nowCinema__title__header}>Сейчас в кино</h1>
+              <div className={styles.nowCinema__title__devider}></div>
+        
+                <ul className={styles.nowCinema__title__order}>
                   <li>Все</li>
                   <li>Боевики</li>
                   <li>Приключения</li>
@@ -31,7 +31,7 @@ const MainPage = () => {
                   <li>Триллеры</li>
                   <li>Драма</li>
                 </ul>
-              </div>
+            
             </div>
             <div className={styles.filmCards}>
               {movies ? (
