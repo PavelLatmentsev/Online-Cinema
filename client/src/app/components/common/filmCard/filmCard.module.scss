@@ -1,6 +1,7 @@
 .filmCard {
     text-align: left;
     cursor: pointer;
+    color: var(--primary-first-color);
   &__imgWrapper {
     position: relative;
   }
@@ -14,22 +15,21 @@
     top: 28px;
     right: 12px;
     border-radius: 5px;
-    background: #89cb36;
+    background: var( --second-green-color);
     padding: 5px 13px;
-    color: #fff;
+    
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
   }
   &__name {
-    color: #fff;
     font-size: 18px;
     font-weight: 700;
     line-height: normal;
     margin-bottom: 4px;
   }
   &__genre {
-    color: #f2f60f;
+    color: var(--primary-second-color);
     font-size: 15px;
     font-weight: 400;
     line-height: normal;
@@ -37,5 +37,5 @@
 }
 
 .downRate {
-  background: #CB3F36;
+  background: var( --second-red-color);
 }

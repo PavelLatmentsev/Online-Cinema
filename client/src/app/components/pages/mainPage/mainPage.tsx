@@ -4,6 +4,7 @@ import CommonButton from "../../common/button/commonButton";
 import moviesService from "../../../service/movie.service";
 import FilmCard from "../../common/filmCard/filmCard";
 import { IFilmCard } from "../../common/filmCard/filmCard.props";
+import { Link } from "react-router-dom";
 
 const MainPage = () => {
   const {
@@ -40,7 +41,7 @@ const MainPage = () => {
             <div className={styles.filmCards}>
               {movies ? (
                 getSshuffle(movies).map((movie) => {
-               return  <FilmCard card={movie} key={movie._id}/> 
+               return <Link to={`movies/${movie.name}`} key={movie._id}> <FilmCard card={movie} /> </Link>
                 })
               ) : (
                 <div>Loading...</div>

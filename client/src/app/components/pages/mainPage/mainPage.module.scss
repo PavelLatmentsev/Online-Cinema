@@ -7,10 +7,10 @@
     &__devider {
         width: 51px;
         height: 2px;
-        background:#fff;
+        background: var(--primary-first-color);
     }
     &__header {
-      color: #fff;
+      color:  var(--primary-first-color);
       font-size: 65px;
       font-weight: 900;
       line-height: normal;
