@@ -3,6 +3,7 @@ import styles from "./mainPage.module.scss";
 import CommonButton from "../../common/button/commonButton";
 import moviesService from "../../../service/movie.service";
 import FilmCard from "../../common/filmCard/filmCard";
+import { IFilmCard } from "../../common/filmCard/filmCard.props";
 
 const MainPage = () => {
   const {
@@ -13,6 +14,9 @@ const MainPage = () => {
   } = useQuery(["movies"], () => moviesService.get());
   console.log("useQuery", movies, isLoading, isSuccess, error);
 
+  const getSshuffle=(array:IFilmCard[])=> {
+  return   array.sort(() => Math.random() - 0.5)
+  }
   return (
     <main>
       <section>
@@ -35,7 +39,7 @@ const MainPage = () => {
             </div>
             <div className={styles.filmCards}>
               {movies ? (
-                movies.map((movie) => {
+                getSshuffle(movies).map((movie) => {
                return  <FilmCard card={movie} key={movie._id}/> 
                 })
               ) : (
