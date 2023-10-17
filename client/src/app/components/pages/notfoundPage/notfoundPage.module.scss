@@ -1,0 +1,25 @@
+.notFound {
+  margin: 122px;
+  text-align: center;
+  font-family: Qanelas;
+  line-height: normal;
+
+  &__error {
+    color: var(--primary-first-color);
+    font-size: 150px;
+    font-weight: 900;
+  }
+  &__title {
+    color: var(--primary-first-color);
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 26px;
+  }
+  &__description {
+    color: var(--primary-first-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 168.7%;
+    margin-bottom: 32px;
+  }
+}
