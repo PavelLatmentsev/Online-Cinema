@@ -1,4 +1,5 @@
 const MoviePAge = () => {
+    
     return ( <h1>Current movie</h1> );
 }
  
