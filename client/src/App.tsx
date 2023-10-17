@@ -13,9 +13,9 @@ import EventPosterPage from "./app/components/pages/eventPosterPage/eventPosterP
 import FeedbackPage from "./app/components/pages/feedbackPage/feedbackPage";
 import MediaPage from "./app/components/pages/mediaPage/mediaPage";
 import NewsPage from "./app/components/pages/newsPage/newsPage";
-import NotfoundPage from "./app/components/pages/notfoundPage/notfoundPage";
 import PostersPage from "./app/components/pages/postersPage/postersPage";
 import MoviesPage from "./app/components/pages/moviesPage/moviesPage";
+import NotFoundLayouts from "./app/components/common/layouts/notFoundLayouts/notFoundLayouts";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         <Route path="posters" element={<PostersPage />} />
         <Route path="media" element={<MediaPage />} />
         <Route path="news" element={<NewsPage />} />
-        <Route path="*" element={<NotfoundPage />} />
+        <Route path="*" element={<NotFoundLayouts/>} />
       </Route>
     )
   );

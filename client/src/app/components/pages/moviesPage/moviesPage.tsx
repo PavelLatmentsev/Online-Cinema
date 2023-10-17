@@ -1,10 +1,10 @@
 import {  useParams } from "react-router-dom";
-import MoviePAge from "../moviePage/moviePage";
+import MoviePage from "../moviePage/moviePage";
 
 const MoviesPage = () => {
   const {movie} = useParams();
   
-  return movie ? <MoviePAge/> : <h1>MoviesPage </h1>;
+  return movie ? <MoviePage/> : <h1>MoviesPage </h1>;
 };
 
 export default MoviesPage;

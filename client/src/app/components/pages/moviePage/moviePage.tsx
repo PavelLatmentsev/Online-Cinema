@@ -1,6 +1,6 @@
-const MoviePAge = () => {
+const MoviePage = () => {
     
     return ( <h1>Current movie</h1> );
 }
  
-export default MoviePAge;
+export default MoviePage;
