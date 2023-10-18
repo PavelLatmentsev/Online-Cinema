@@ -6,7 +6,30 @@
         "rating": "6,70",
         "url":"/public/img/films/pretoria.jpg",
         "isNewCinema": true,
-        "inCinema": true
+        "inCinema": true,
+        "originalName": "Escape from Pretoria",
+        "ratingKinoarea": "8,70",
+        "descriptionMovie": "Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.",
+        "trailerUrl":"https://www.youtube.com/watch?v=7cl5x78F6-E",
+        "expectations": "85%",
+        "favorites": true,
+        "release": "2020",
+        "country":"Великобритания, Австралия",
+        "tagline": "Подбери ключ к свободе",
+         "director": "Фрэнсис Аннан",
+         "scenarist": "Фрэнсис Аннан, Л.Х. Адамс, Кэрол Гриффитс",
+         "producer": "Дэвид Баррон, Марк Блэйни, Гари Хэмилтон",
+         "operator": " Джеффри Холл",
+         "composer": "Дэвид Хиршфелдер",
+         "artist": " Скотт Бёрд, Эрика Брайан, Мариот Керр",
+         "installation": "Ник Фентон",
+         "fundraisers": "12808",
+         "premiereWorld": "01.03.2020",
+         "premiereRF": "14.05.2020",
+         "age": "16+",
+         "timeMovie": "106 минут"
+
+
       },
 
       {
