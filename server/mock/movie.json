@@ -7,7 +7,6 @@
         "url":"/public/img/films/pretoria.jpg",
         "isNewCinema": true,
         "inCinema": true,
-
         "originalName": "Escape from Pretoria",
         "ratingKinoarea": "8,70",
         "description": "Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.",
@@ -28,7 +27,7 @@
          "premiereWorld": "01.03.2020",
          "premiereRF": "14.05.2020",
          "age": "16+",
-         "timeMovie": "106 минут"
+         "timeMovie": "106 мин"
 
 
       },
@@ -40,7 +39,28 @@
         "rating": "4,90",
         "url":"/public/img/films/3022.jpg",
         "isNewCinema": true,
-        "inCinema": true
+        "inCinema": true,
+        "originalName": "3022",
+        "ratingKinoarea": "4,50",
+        "description": "Группа астронавтов оказывается без поддержки в открытом космосе, после того как на Земле произошла глобальная катастрофа. Они считают себя последними оставшимися в живых людьми. И чтобы сохранить последние остатки человечества, им приходится вступить в жестокую борьбу за выживание в холодном космосе.",
+        "trailerUrl":"https://youtu.be/AGQ7OkmIx4Q?si=nUI1SdJkLJzQSqHy",
+        "expectations": "75%",
+        "favorites": false,
+        "release": "2019",
+        "country":"США",
+        "tagline": "What do you do when you're the last person alive?",
+         "director": "Джон Суитц",
+         "scenarist": "Райан Бинако",
+         "producer": "Тара Л. Крэйг, Джон Суитц, Шэнан Бекер",
+         "operator": "Уилл Стоун",
+         "composer": "Джимми ЛаВалл",
+         "artist": "Адриана Ламбарри, Мелисса Эрдман, Дэвид Дин Эберт",
+         "installation": "Джон Суитц",
+         "fundraisers": "-",
+         "premiereWorld": "22.11.2019",
+         "premiereRF": "-",
+         "age": "16+",
+         "timeMovie": "91 мин"
       },
       {
         "_id": "67rdca3eeb7f6f324geed43900ktk",
@@ -50,8 +70,8 @@
         "url":"/public/img/films/badboys.jpg",
         "isNewCinema": true,
         "inCinema": true
-
       },
+
       {
         "_id": "67rdca3eeb7f6f324geed43901vcvxcvcx",
         "genre": "Триллер, драма, криминал",
@@ -59,9 +79,31 @@
         "rating": "8,50",
         "url":"public/img/films/joker.jpg",
         "isNewCinema": true,
-        "inCinema": true
-
+        "inCinema": true,
+        
+        "originalName": "Joker",
+        "ratingKinoarea": "8,00",
+        "description": "Готэм, начало 1980-х годов. Комик Артур Флек живет с больной матерью, которая с детства учит его «ходить с улыбкой». Пытаясь нести в мир хорошее и дарить людям радость, Артур сталкивается с человеческой жестокостью и постепенно приходит к выводу, что этот мир получит от него не добрую улыбку, а ухмылку злодея Джокера.",
+        "trailerUrl":"https://youtu.be/jGfiPs9zuhE?si=E6c2_9FX7GIU30Pm",
+        "expectations": "95%",
+        "favorites": true,
+        "release": "2019",
+        "country":"США, Канада",
+        "tagline": "Сделай счастливое лицо",
+         "director": "Тодд Филлипс",
+         "scenarist": "Тодд Филлипс, Скотт Сильвер, Боб Кейн",
+         "producer": "Ричард Баратта, Брюс Берман, Джейсон Клот",
+         "operator": "Лоуренс Шер",
+         "composer": "Хильдур Гуднадоуттир",
+         "artist": "Марк Фридберг, Лора Боллинджер, Марк Бриджес",
+         "installation": "Джефф Грот",
+         "fundraisers": "$1 078 751 311",
+         "premiereWorld": "31.08.2019,",
+         "premiereRF": "03.10.2019",
+         "age": "18+",
+         "timeMovie": "122 мин"
       },
+
       {
         "_id": "67rdca3eeb7f6f324geed43902we543yh",
         "genre": "Биография, спорт, драма,боевик",
