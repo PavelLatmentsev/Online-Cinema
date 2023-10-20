@@ -1,10 +1,10 @@
-import { useQuery } from "@tanstack/react-query";
-import styles from "./mainPage.module.scss";
-import CommonButton from "../../common/button/commonButton";
-import moviesService from "../../../service/movie.service";
-import FilmCard from "../../common/filmCard/filmCard";
-import { IFilmCard } from "../../common/filmCard/filmCard.props";
-import { Link } from "react-router-dom";
+import { useQuery } from '@tanstack/react-query';
+import styles from './mainPage.module.scss';
+import CommonButton from '../../common/button/commonButton';
+import moviesService from '../../../service/movie.service';
+import FilmCard from '../../common/filmCard/filmCard';
+import { IFilmCard } from '../../common/filmCard/filmCard.props';
+import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   const {
@@ -12,12 +12,12 @@ const MainPage = () => {
     isSuccess,
     error,
     data: movies,
-  } = useQuery(["movies"], () => moviesService.get());
-  console.log("useQuery", movies, isLoading, isSuccess, error);
+  } = useQuery(['movies'], () => moviesService.get());
+  console.log('useQuery', movies, isLoading, isSuccess, error);
 
-  const getSshuffle=(array:IFilmCard[])=> {
-  return   array.sort(() => Math.random() - 0.5)
-  }
+  const getSshuffle = (array: IFilmCard[]) => {
+    return array.sort(() => Math.random() - 0.5);
+  };
   return (
     <main>
       <section>
@@ -26,26 +26,33 @@ const MainPage = () => {
             <div className={styles.nowCinema__title}>
               <h1 className={styles.nowCinema__title__header}>Сейчас в кино</h1>
               <div className={styles.nowCinema__title__devider}></div>
-        
-                <ul className={styles.nowCinema__title__order}>
-                  <li>Все</li>
-                  <li>Боевики</li>
-                  <li>Приключения</li>
-                  <li>Комедии</li>
-                  <li>Фантастика</li>
-                  <li>Триллеры</li>
-                  <li>Драма</li>
-                </ul>
-            
+
+              <ul className={styles.nowCinema__title__order}>
+                <li>Все</li>
+                <li>Боевики</li>
+                <li>Приключения</li>
+                <li>Комедии</li>
+                <li>Фантастика</li>
+                <li>Триллеры</li>
+                <li>Драма</li>
+              </ul>
             </div>
             <div className={styles.filmCards}>
               {movies ? (
-                getSshuffle(movies).map((movie) => {
-               return <Link to={`movies/${movie.name}`} key={movie._id}> <FilmCard card={movie} /> </Link>
+                getSshuffle(movies).map(movie => {
+                  return (
+                    <Link
+                      to={`movies/${movie.name}-${movie.release}`}
+                      key={movie._id}
+                    >
+                      {' '}
+                      <FilmCard card={movie} />{' '}
+                    </Link>
+                  );
                 })
               ) : (
                 <div>Loading...</div>
-              )}{" "}
+              )}{' '}
             </div>
             <CommonButton background="transparent">Все новинки</CommonButton>
           </div>

@@ -1,11 +1,29 @@
-
-
 export interface IFilmCard {
-      genre:string,
-      _id: string,
-      inCinema: boolean,
-      isNewCinema: boolean,
-      name: string,
-      rating: string,
-      url: string
+  genre: string;
+  _id: string;
+  inCinema: boolean;
+  isNewCinema: boolean;
+  name: string;
+  rating: string;
+  url: string;
+  originalName: string;
+  ratingKinoarea: string;
+  description: string;
+  trailerUrl: string;
+  expectations: string;
+  favorites: boolean;
+  release: string;
+  country: string;
+  tagline: string;
+  director: string;
+  scenarist: string;
+  producer: string;
+  operator: string;
+  composer: string;
+  artist: string;
+  installation: string;
+  premiereWorld: string;
+  premiereRF: string;
+  age: string;
+  timeMovie: string;
 }
