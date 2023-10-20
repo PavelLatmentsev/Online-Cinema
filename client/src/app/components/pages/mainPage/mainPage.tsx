@@ -15,7 +15,7 @@ const MainPage = () => {
   } = useQuery(['movies'], () => moviesService.get());
   console.log('useQuery', movies, isLoading, isSuccess, error);
 
-  const getSshuffle = (array: IFilmCard[]) => {
+  const getShuffle = (array: IFilmCard[]) => {
     return array.sort(() => Math.random() - 0.5);
   };
   return (
@@ -39,10 +39,10 @@ const MainPage = () => {
             </div>
             <div className={styles.filmCards}>
               {movies ? (
-                getSshuffle(movies).map(movie => {
+                getShuffle(movies).map(movie => {
                   return (
                     <Link
-                      to={`movies/${movie.name}-${movie.release}`}
+                      to={`movies/${movie.name}-${movie.release}-${movie._id}`}
                       key={movie._id}
                     >
                       {' '}
