@@ -1,19 +1,20 @@
-import { useParams } from 'react-router-dom';
 import styles from './moviePage.module.scss';
-import moviesService from '../../../service/movie.service';
 import { useQuery } from '@tanstack/react-query';
-const MoviePage = () => {
-  const { movie } = useParams();
+import moviesService from '../../../service/movie.service';
+const MoviePage = ({ movie }: { movie: string }) => {
   const [currentMovie, reliseDate, id] = movie?.split('-') ?? [];
-  const { data } = useQuery(['currentFilm'], () => moviesService.get());
-  console.log(currentMovie, reliseDate, id, data);
+  const { data } = useQuery(['currentMovie'], () => moviesService.getById(id));
+
   return (
-    <div className={styles.currentMovie}>
-      <div>
-        {/* <img src={} alt="" /> */}
-        <h1>current film</h1>
+    data && (
+      <div className={styles.currentMovie}>
+        <div>
+          <img src={data?.url} alt={data?.name} />
+          <h1>{currentMovie}</h1>
+          <span>{reliseDate}</span>
+        </div>
       </div>
-    </div>
+    )
   );
 };
 

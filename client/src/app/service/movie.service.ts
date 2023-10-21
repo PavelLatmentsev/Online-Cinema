@@ -8,5 +8,11 @@ const moviesService = {
     const { data } = await axios.get<IFilmCard[]>(baseUrl + movieEndpoint);
     return data;
   },
+  getById: async (id: string) => {
+    const { data } = await axios.get<IFilmCard>(
+      baseUrl + movieEndpoint + `/${id}`,
+    );
+    return data;
+  },
 };
 export default moviesService;
