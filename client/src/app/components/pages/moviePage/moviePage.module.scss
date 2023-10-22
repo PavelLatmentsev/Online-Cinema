@@ -1,0 +1,46 @@
+.container {
+  min-width: 1430px;
+  margin: 0 auto;
+}
+
+.currentMovie {
+}
+.infoBlock {
+  margin: 0 auto;
+  max-width: 1163px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary-first-color);
+  line-height: normal;
+  &__info {
+    text-align: left;
+    margin-left: 50px;
+  }
+  &__art img {
+    width: 404px;
+    border-radius: 8px;
+  }
+  &__name {
+    font-size: 65px;
+    font-weight: 900;
+  }
+  &__origName {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  &__description {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 166.5%;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+  }
+  &__btn > img {
+    margin-left: 37px;
+    scale: 1.3;
+  }
+}

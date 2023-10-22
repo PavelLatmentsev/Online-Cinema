@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
-import styles from "./header.module.scss";
-import NavBar from "../navBar/navBar";
+import { Link } from 'react-router-dom';
+import styles from './header.module.scss';
+import NavBar from '../navBar/navBar';
 
 const Header = (): JSX.Element => {
   return (
@@ -14,10 +14,7 @@ const Header = (): JSX.Element => {
               </Link>
             </div>
             <div>
-              <img
-                src="/img/icons/icons-social.svg"
-                alt="social"
-              />
+              <img src="/img/icons/icons-social.svg" alt="social" />
             </div>
           </div>
           <NavBar />

@@ -7,13 +7,10 @@ import { IFilmCard } from '../../common/filmCard/filmCard.props';
 import { Link } from 'react-router-dom';
 
 const MainPage = () => {
-  const {
-    isLoading,
-    isSuccess,
-    error,
-    data: movies,
-  } = useQuery(['movies'], () => moviesService.get());
-  console.log('useQuery', movies, isLoading, isSuccess, error);
+  const { isLoading, isSuccess, error, data } = useQuery(['movies'], () =>
+    moviesService.get(),
+  );
+  console.log('useQuery', data, isLoading, isSuccess, error);
 
   const getShuffle = (array: IFilmCard[]) => {
     return array.sort(() => Math.random() - 0.5);
@@ -38,8 +35,8 @@ const MainPage = () => {
               </ul>
             </div>
             <div className={styles.filmCards}>
-              {movies ? (
-                getShuffle(movies).map(movie => {
+              {isSuccess ? (
+                getShuffle(data).map(movie => {
                   return (
                     <Link
                       to={`movies/${movie.name}-${movie.release}-${movie._id}`}
