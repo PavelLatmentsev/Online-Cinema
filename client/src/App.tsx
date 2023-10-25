@@ -4,6 +4,7 @@ import {
   RouterProvider,
   createRoutesFromElements,
   Route,
+  Link,
 } from 'react-router-dom';
 import MainPageLayouts from './app/components/common/layouts/mainPageLayouts/mainPageLayouts';
 import ActorsPage from './app/components/pages/actorsPage/actorsPage';
@@ -22,15 +23,51 @@ function App() {
     createRoutesFromElements(
       <Route path="/">
         <Route index element={<MainPageLayouts />} />
-        <Route path="actors/:actor?" element={<ActorsPage />} />
-        <Route path="category" element={<CategoryPage />} />
-        <Route path="collections" element={<CollectionsPage />} />
-        <Route path="events" element={<EventPosterPage />} />
-        <Route path="feedback" element={<FeedbackPage />} />
-        <Route path="movies/:movie?" element={<MoviesPage />} />
-        <Route path="posters" element={<PostersPage />} />
-        <Route path="media" element={<MediaPage />} />
-        <Route path="news" element={<NewsPage />} />
+        <Route
+          path="actors/:actor?"
+          element={<ActorsPage />}
+          handle={{ crumb: () => <Link to="/actors">Актёры</Link> }}
+        />
+        <Route
+          path="category"
+          element={<CategoryPage />}
+          handle={{ crumb: () => <Link to="/category">Категории</Link> }}
+        />
+        <Route
+          path="collections"
+          element={<CollectionsPage />}
+          handle={{ crumb: () => <Link to="/collections">Подборки</Link> }}
+        />
+        <Route
+          path="events"
+          element={<EventPosterPage />}
+          handle={{ crumb: () => <Link to="/events">Афиша</Link> }}
+        />
+        <Route
+          path="feedback"
+          element={<FeedbackPage />}
+          handle={{ crumb: () => <Link to="/feedback">Обратная связь</Link> }}
+        />
+        <Route
+          path="movies/:movie?"
+          element={<MoviesPage />}
+          handle={{ crumb: () => <Link to="/movies/">Фильмы</Link> }}
+        />
+        <Route
+          path="posters"
+          element={<PostersPage />}
+          handle={{ crumb: () => <Link to="/posters">Постеры</Link> }}
+        />
+        <Route
+          path="media"
+          element={<MediaPage />}
+          handle={{ crumb: () => <Link to="/media">Медиа</Link> }}
+        />
+        <Route
+          path="news"
+          element={<NewsPage />}
+          handle={{ crumb: () => <Link to="/news">Новости</Link> }}
+        />
         <Route path="*" element={<NotFoundLayouts />} />
       </Route>,
     ),
