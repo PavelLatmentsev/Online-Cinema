@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+.lastCrump {
+  color: var(--primary-first-color);
+  font-family: Qanelas;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 168.7%;
+}

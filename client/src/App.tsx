@@ -6,6 +6,7 @@ import {
   Route,
   Link,
 } from 'react-router-dom';
+import arrow from '../public/img/icons/arrowBread.svg';
 import MainPageLayouts from './app/components/common/layouts/mainPageLayouts/mainPageLayouts';
 import ActorsPage from './app/components/pages/actorsPage/actorsPage';
 import CategoryPage from './app/components/pages/categoryPage/categoryPage';
@@ -26,7 +27,20 @@ function App() {
         <Route
           path="actors/:actor?"
           element={<ActorsPage />}
-          handle={{ crumb: () => <Link to="/actors">Актёры</Link> }}
+          handle={{
+            crumb: (data: string | undefined) => (
+              <>
+                <Link to="/actors">Актёры</Link>
+                {data && (
+                  <>
+                    {' '}
+                    <img src={arrow} alt="arrow" />
+                    <span className="lastCrump"> {data}</span>
+                  </>
+                )}
+              </>
+            ),
+          }}
         />
         <Route
           path="category"
@@ -51,7 +65,19 @@ function App() {
         <Route
           path="movies/:movie?"
           element={<MoviesPage />}
-          handle={{ crumb: () => <Link to="/movies/">Фильмы</Link> }}
+          handle={{
+            crumb: (data: string | undefined) => (
+              <>
+                <Link to="/movies">Фильмы</Link>
+                {data && (
+                  <>
+                    <img src={arrow} alt="arrow" />
+                    <span className="lastCrump"> {data}</span>
+                  </>
+                )}
+              </>
+            ),
+          }}
         />
         <Route
           path="posters"

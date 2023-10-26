@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import moviesService from '../../../service/movie.service';
 import { useQuery } from '@tanstack/react-query';
 import MoviePage from '../moviePage/moviePage';
+import BreadCrumps from '../../common/breadcrumps/bredcrumps';
 
 const MoviesPage = () => {
   const { movie } = useParams();
@@ -9,12 +10,15 @@ const MoviesPage = () => {
   return movie ? (
     <MoviePage movie={movie} />
   ) : (
-    <ul>
-      {data &&
-        data.map(movie => {
-          return <li key={movie._id}>{movie.name}</li>;
-        })}{' '}
-    </ul>
+    <>
+      <BreadCrumps />
+      <ul>
+        {data &&
+          data.map(movie => {
+            return <li key={movie._id}>{movie.name}</li>;
+          })}{' '}
+      </ul>
+    </>
   );
 };
 
